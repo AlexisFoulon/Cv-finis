@@ -1,0 +1,350 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1,h2{
+    font-family:'Lato', sans-serif ;
+}
+
+body,header,p,li{
+    font-family: 'Raleway', sans-serif;
+}
+
+body{
+    position: relative;
+    width: 100%;
+    max-width: 1160px;
+    background-color: #c3c3c3; 
+    margin: 0 auto;
+}
+
+/* barre du haut avec photo + infos */
+
+header{
+    display: flex;
+    align-items: center;
+    padding-left:100px;
+    width: 1160px;
+    height: 200px;
+    background-color: #1bbca1;
+}
+
+.photo{
+    width: 12%;
+    min-width: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    aspect-ratio: 1;
+    border: 1px solid #ffffff;
+    float: left;
+    margin-top: 15px;
+}
+
+.photo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 1px solid #fff;
+    cursor: zoom-in;
+}
+
+.infos{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    color: #fff;
+}
+
+.infos h1{
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.infos h2{
+    margin-bottom: 20px;
+}
+
+.contact{
+    display: flex;
+    text-align: center;
+    flex-direction:row;
+}
+
+.column-1{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    margin: 0 300px;
+}
+
+.column-2{
+    display:flex; 
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    margin: 0 315px;
+}
+
+.mail a, .phone a, .house a{
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+
+.column-1 span, .column-2 span{
+    padding-left: 25px;
+}
+
+/* Partie gauche, compétence, langues, qualités et centres d'intérêts */
+
+.left-side{
+    position: absolute;
+    float: left;
+    max-width: 300px;
+    height: 1000px;
+    background-color: #e3e3e3;
+    line-height: 1.6;
+    list-style-type: none;
+    
+}
+
+.left-side hr{
+    width: 250px;
+    margin-left: 10px;
+    border:1px solid #d3d3d3
+}
+
+.skills{
+    padding: 15px;
+    line-height: 30px;
+}
+
+.skills h2{
+    color:#1bbca1;
+    margin-left: 10px;
+}
+
+
+.skills ul{
+    font-size: 1rem;
+    list-style-type: none;
+    font-weight: bold;
+    padding-top: 15px;
+    margin-left: 10px;
+}
+
+/* je n'est pas réussis à faire exactement ce qui étais demandé dans la maquette au niveau des étoiles */
+.level{
+    margin-top: -60px;
+    padding-bottom: 40px;
+    gap: 15px;
+}
+
+.stars{
+    float: right;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    color: #1bbca1;
+}
+.stars-1{
+    float: right;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    color: #1bbca1;
+}
+
+.stars-empty{
+    color: transparent;
+    text-shadow: 0 0 0 #1bbca180;
+}
+
+.language{
+    padding: 10px 20px 20px;
+    line-height: 2;
+}
+
+.language h2{
+    color: #1bbca1;
+    margin-left: 10px;
+}
+
+.language ul{
+    font-size: 1rem;
+    list-style-type: none;
+    font-weight: bold;
+    padding-top: 15px;
+    margin-left: 10px;
+}
+
+.level-language{
+    float: right;
+    display: flex;
+    flex-direction: column;
+    margin-top: -65px;
+}
+
+.quality, .interest{
+    padding: 15px;
+}
+
+.quality h2 , .interest h2{
+    color: #1bbca1;
+    margin-left: 10px;
+}
+
+.quality ul,.interest ul{
+    font-size: 1rem;
+    list-style-type: square;
+    padding-top: 15px;
+    margin-left: 30px;
+}
+
+li::marker{
+    color: #1bbca1;
+}
+
+/* Partie droite avec parcour professionnel */
+
+.right-side{
+    position: relative;
+    float: right;
+    width: 860px;
+    height: 1000px;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+
+/* Profile  */
+
+.profile{
+    margin:  40px 40px 20px 40px;
+}
+
+.profile h2{
+    margin-bottom: 5px;
+    color: #1bbca1;
+}
+
+.right-side hr {
+    width: 750px;
+    margin-bottom: 20px;
+    border:1px solid #e3e3e3
+}
+
+.text{
+    font-size: 1rem;
+    max-width: 750px;
+    word-wrap: normal;
+    text-indent: 30px;
+}
+
+/* Formations */
+
+.formations{
+    margin: 20px 40px;
+}
+
+.formations h2{
+    margin-top: 30px;
+    margin-bottom: 5px;
+    color: #1bbca1;
+}
+
+.formations ul{
+    font-size: 1rem;
+    list-style-type: none;
+    padding: 20px 10px;
+}
+
+.formations ul li:first-child{
+    font-weight: bold;
+}
+
+/* Margin en negatif ici pour mettre le texte à niveau  */
+
+.years{
+    float: right;
+    display: inline-flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+    color: #1bbca1;
+}
+
+
+.years :first-child{
+    margin-top: -200px;
+}
+/* Expérience professionnel */
+
+.experience{
+    margin: 20px 40px;
+}
+
+.experience h2{
+    margin-top: 30px;
+    margin-bottom: 5px;
+    color: #1bbca1;
+}
+.experience ul{
+    font-size: 1rem;
+    list-style-type: none;
+    padding: 20px 10px;
+}
+
+.experience ul li:first-child{
+    font-weight: bold;
+}
+
+.years-2{
+    float: right;
+    display: inline-flex;
+    flex-direction: column;
+    line-height: 4.5;
+    color: #1bbca1;
+}
+
+.years-2 :first-child{
+    margin-top: -300px;
+}
+
+.italique{
+    font-size: 0.8rem;
+    font-style: italic;
+}
+
+/* Effet Demandé */
+.right-side ul:hover{
+    background-color: #e3e3e3;
+    border-left: 5px solid #1bbca1;
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1160px;
+    height: 100px;
+    background-color: #1bbca1;
+}
+
+.footer{
+    display: flex;
+}
+
+.social-media i{
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer i:hover{
+    opacity: 0.7;
+}
